@@ -3,44 +3,40 @@
 <head>
     <title>MED-AAD</title>
     <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#img-button").click(function(){
+        
+            var myimages=new Array()
+            //specify random images below. You can have as many as you wish
+            
+            myimages[0] = new Image();
+            myimages[0].src = '../elwyn578.github.io/media/images/ali.jpg'
+        
+            myimages[1] = new Image();
+            myimages[1].src = '../elwyn578.github.io/media/images/ali-1.png'
+        
+            myimages[2] = new Image();
+            myimages[2].src = '../elwyn578.github.io/media/images/ali-2.png'
+        
+            myimages[3] = new Image();
+            myimages[3].src = '../elwyn578.github.io/media/images/ali-3.png'
+        
+            myimages[4] = new Image();
+            myimages[4].src = '../elwyn578.github.io/media/images/ali-4.png'
+            
+            var ry = Math.floor(Math.random()*myimages.length)
+        
+            $("#img-block").empty();
+            $("#img-block").append("Here is some text to see if this shit works");
+        
+          });
+        });     
+    </script>
 </head>
 <body>
 <div id="root"></div> 
-<script language="JavaScript">
-$(document).ready(function(){
-  $("#img-button").click(function(){
-    var myimages=new Array()
-    //specify random images below. You can have as many as you wish
-    
-    myimages[0] = new Image();
-    myimages[0].src = '../elwyn578.github.io/media/images/ali.jpg'
 
-    myimages[1] = new Image();
-    myimages[1].src = '../elwyn578.github.io/media/images/ali-1.png'
-
-    myimages[2] = new Image();
-    myimages[2].src = '../elwyn578.github.io/media/images/ali-2.png'
-
-    myimages[3] = new Image();
-    myimages[3].src = '../elwyn578.github.io/media/images/ali-3.png'
-
-    myimages[4] = new Image();
-    myimages[4].src = '../elwyn578.github.io/media/images/ali-4.png'
-    
-    var ry = Math.floor(Math.random()*myimages.length)
-
-    $("#img-block").empty();
-    $("#img-block").append(myimages[ry].src);
-
-  });
-});
-    
-    
-   
-    
-    
-       
-    </script>
 <h1>Alisha Desai</h1>
 <p>
     I love you so so so much <br>
