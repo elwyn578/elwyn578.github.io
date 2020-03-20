@@ -26,9 +26,10 @@
             myimages[4].src = '../elwyn578.github.io/media/images/ali-4.png';
             
             var ry = Math.floor(Math.random()*myimages.length);
-        
+            var pic = '<img src="' + myimages[ry] + '">';
+
             $("#img-block").empty();
-            $("#img-block").append("<p>Here is some text to see if this shit works</p>");
+            $("#img-block").append(pic);
         
           });
         });     
