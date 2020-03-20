@@ -1,7 +1,37 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>MED-AAD</title>
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
 <body>
 <div id="root"></div> 
+<script language="JavaScript">
+$(document).ready(function(){
+  $("#img-button").click(function(){
+    var myimages=new Array()
+    //specify random images below. You can have as many as you wish
+    myimages[1]="../elwyn578.github.io/media/images/ali.jpg"
+    myimages[2]="../elwyn578.github.io/media/images/ali-1.jpg"
+    myimages[3]="../elwyn578.github.io/media/images/ali-2.jpg"
+    myimages[4]="../elwyn578.github.io/media/images/ali-3.jpg"
+    myimages[5]="../elwyn578.github.io/media/images/ali-4.jpg"
+    myimages[6]="../elwyn578.github.io/media/images/ali-5.jpg"
+    
+    var ry = Math.floor(Math.random()*myimages.length)
+
+    $("#img-block").empty();
+    $("#img-block").append(myimages[ry]);
+
+  });
+});
+    
+    
+   
+    
+    
+       
+    </script>
 <h1>Alisha Desai</h1>
 <p>
     I love you so so so much <br>
@@ -11,9 +41,12 @@
     alt="You are so cute Ali (trust me)">
 
 </p>
-<div>
-    <button id="jsstyle" 
-    onclick="display_random_image();">Show Image</button> 
+    <div>
+    <button id="img-button">Show Image</button> 
+    </div>
+
+    <div id="img-block">
+
     </div>
 </body>
 </html>
